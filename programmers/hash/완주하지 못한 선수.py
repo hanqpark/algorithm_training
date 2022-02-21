@@ -7,3 +7,10 @@ def solution(participant, completion):
         if participant[i] != completion[i]:
             return participant[i]
     return participant[-1]
+
+
+from collections import Counter
+def sol(participant, completion):
+    answer = Counter(participant) - Counter(completion)
+    return list(answer.keys())[0]
+    

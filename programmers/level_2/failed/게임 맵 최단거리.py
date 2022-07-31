@@ -71,3 +71,42 @@ def solution(maps):
 
     answer = graph[-1][-1]
     return answer
+
+
+def sangyun(maps):    
+    dx=[-1,1,0,0] # 움직일 방향 설정
+    dy=[0,0,-1,1]
+    n=len(maps)-1
+    m=len(maps[0])-1
+
+    def bfs(x,y):
+        queue=deque([])
+        queue.append([x,y])
+        
+        while queue:
+            x,y=queue.popleft()
+            for i in range(4):
+                nx=x+dx[i]
+                ny=y+dy[i]
+                
+                if nx<0 or nx>n or ny<0 or ny>m: # 못가는 길이라면 continue
+                    continue
+                elif maps[nx][ny]==0: # 막힌 길이라면 continue
+                    continue
+                elif maps[nx][ny]==1: # 갈 수 있는 길이라면, 여태껏 걸은 칸+1 을 더해줌
+                    if nx!=0 or ny!=0:
+                        maps[nx][ny]=maps[x][y]+1
+                        queue.append([nx,ny])
+            
+                if nx==n and ny==m:
+                    if maps[nx][ny]!=0 or maps[nx][ny]!=1:
+                        return maps[nx][ny]
+                    
+                    return -1
+    return bfs(0,0)
+    
+
+if __name__ == "__main__":
+    maps = [[1,0,1,1,1],[1,0,1,0,1],[1,0,1,1,1],[1,1,1,0,1],[0,0,0,0,1]]
+    res = sangyun(maps)
+    print(res)

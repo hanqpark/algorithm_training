@@ -23,5 +23,17 @@ def hanq():
     res = [str(x[-1]) for x in people]
     print(" ".join(res))
     
-def woosung():
     
+def woosung():
+    n, weight, height, ans = int(read()), [], [], []
+    for _ in range(n):
+        x, y = map(int, read().split())
+        weight.append(x); height.append(y)
+    
+    for i in range(n):
+        w, h = weight[i], height[i]
+        cnt = 1
+        for j in range(n):
+            if w < weight[j] and h < height[j]: cnt += 1
+        ans.append(cnt)
+    print(*ans)

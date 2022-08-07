@@ -11,3 +11,6 @@ def solution(n):
             else:
                 s += j
     return cnt
+
+res = solution(int(input()))
+print(res)

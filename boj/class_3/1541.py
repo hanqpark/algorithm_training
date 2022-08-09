@@ -5,6 +5,23 @@
 # A(?!B) : A 뒤에 B가 없는 경우에만 접근할 수 있다.
 import re
 
+def woosung():
+    input_text = input().split('-')
+    final_result = 0
+    count = 0
+
+    for i in input_text:
+        nums = map(int, i.split('+'))
+        sum_nums = sum(nums)
+        
+        if count == 0: final_result += sum_nums
+        else: final_result -= sum_nums
+
+        count += 1
+
+    print(final_result)
+
+
 s = list(re.sub(r'\b0+(?!\b)', '', input()))
 open = False
 for i in range(len(s)+s.count("-")*2-1):

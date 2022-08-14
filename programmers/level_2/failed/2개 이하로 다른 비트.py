@@ -8,7 +8,7 @@ def mysol(numbers):
     return ans
 
 
-def solution_2(numbers):
+def solution(numbers):
     return [(((num ^ (num+1)) >> 2) +num +1) for num in numbers]
 
 solution_2([7, 15])

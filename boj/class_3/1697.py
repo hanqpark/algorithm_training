@@ -1,8 +1,7 @@
-# 2022.08.19
-# https://www.acmicpc.net/problem/1697
-# 숨바꼭질
-''' 도움 받은 사이트
-https://www.acmicpc.net/board/view/88502 <- 반례 모음 '''
+''' 숨바꼭질
+문제 푼 날짜: 2022.08.19 금요일
+문제 사이트: https://www.acmicpc.net/problem/1697
+반례 모음: https://www.acmicpc.net/board/view/88502 '''
 
 from collections import deque
 

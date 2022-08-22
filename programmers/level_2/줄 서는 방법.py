@@ -14,7 +14,7 @@ def solution(n, k):
     nums = [i+1 for i in range(n)] 
     npac = prod(nums)
     res = []
-    for i in range(n, 0, -1):
+    for i in range(n, 0, -1):                   # 수학적인 방법으로 접근하여 주석 달기가 애매하다
         npac //= i
         idx = k//npac if k%npac else k//npac-1
         res.append(nums.pop(idx))

@@ -4,7 +4,7 @@
 # 난이도: 실버 3
 # https://www.acmicpc.net/problem/15651
 # 한줄 평: 개털렸음.. 똑같이 재귀로 구현했으나 나는 공간복잡도가 초과해서 망했다
-        # https://jiwon-coding.tistory.com/23
+# https://jiwon-coding.tistory.com/23
 from copy import deepcopy
 def first_try(lst, m):
     if not m:

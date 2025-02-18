@@ -2,11 +2,7 @@
  * @file 119. Pascal's Triangle II.cpp
  * @author hanqpark
  * @link https://leetcode.com/problems/pascals-triangle-ii/
- * @version 0.1
  * @date 2025-02-18
- * 
- * @copyright Copyright (c) 2025
- * 
  */
 
 #include <vector>

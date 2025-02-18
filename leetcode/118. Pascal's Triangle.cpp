@@ -2,7 +2,6 @@
  * @file 118. Pascal's Triangle.cpp
  * @author hanqpark
  * @link  https://leetcode.com/problems/pascals-triangle/description/
- * @version 0.1
  * @date 2025-02-18
  */
 

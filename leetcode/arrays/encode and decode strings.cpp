@@ -1,3 +1,10 @@
+/**
+ * @file encode and decode strings.cpp
+ * @author hanqpark
+ * @link https://neetcode.io/problems/string-encode-and-decode
+ * @date 2025-02-27
+ */
+
 #include <string>
 #include <vector>
 #include <sstream>

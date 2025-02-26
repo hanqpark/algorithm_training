@@ -25,7 +25,9 @@ public:
 
     string bestEncode(vector<string>& strs) {
         string answer;
-        answer.reserve(accumulate(strs.begin(), strs.end(), 0, [](int sum, const string& str) { return sum + str.size() + 1; }));
+        answer.reserve(accumulate(strs.begin(), strs.end(), 0, [](int sum, const string& str) { 
+            return sum + str.size() + 1; 
+        }));
 
         for (const string& str : strs) {
             answer.append(str);

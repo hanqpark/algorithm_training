@@ -4,7 +4,6 @@
  * @link https://neetcode.io/problems/valid-sudoku
  * @date 2025-03-09
  */
-
 #include <iostream>
 #include <vector>
 
